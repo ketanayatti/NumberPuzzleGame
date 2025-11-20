@@ -30,8 +30,9 @@ export const Grid: React.FC<GridProps> = ({
   const padding = 16;
   const availableWidth = screenWidth - padding * 2;
   const gridGap = 8;
-  const cellSize =
-    (availableWidth - (gridState.gridCols - 1) * gridGap) / gridState.gridCols;
+  const cellSize = Math.floor(
+    (availableWidth - (gridState.gridCols - 1) * gridGap) / gridState.gridCols
+  );
 
   const styles = StyleSheet.create({
     container: {
