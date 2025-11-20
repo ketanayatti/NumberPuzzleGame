@@ -11,6 +11,7 @@ import {
   TouchableOpacity,
   Text,
   Alert,
+  Platform,
 } from 'react-native';
 import Grid from './Grid';
 import TargetDisplay from './TargetDisplay';
@@ -234,7 +235,7 @@ export const GameContainer: React.FC<GameContainerProps> = ({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      paddingVertical: 6,
+      paddingVertical: 2,
     },
     bottomSection: {
       backgroundColor: '#FFFFFF',

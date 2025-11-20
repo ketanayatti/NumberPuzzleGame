@@ -10,7 +10,7 @@
 <br />
 
 **A dynamic, brain-teasing puzzle game where math meets strategy.**  
-*Find the hidden combination of numbers that sum up to the target.*
+_Find the hidden combination of numbers that sum up to the target._
 
 <br />
 
@@ -37,14 +37,14 @@
 
 ## ✨ Features
 
--   **🔢 Dynamic Puzzle Generation**: Every game is unique! The engine generates a guaranteed solvable puzzle with a random target sum and required selection count.
--   **🧠 Strategic Gameplay**: It's not just about math; it's about finding the *exact* set of numbers (e.g., "Select 4 numbers that sum to 31").
--   **🎨 Modern UI/UX**:
-    -   Smooth animations using `react-native-reanimated`.
-    -   Interactive feedback (shakes on error, glows on success).
-    -   Clean, professional HUD with progress tracking.
--   **📱 Cross-Platform**: Runs seamlessly on Web, iOS, and Android thanks to Expo.
--   **⚡ Instant Feedback**: Visual cues for progress, success, and errors keep the gameplay fluid.
+- **🔢 Dynamic Puzzle Generation**: Every game is unique! The engine generates a guaranteed solvable puzzle with a random target sum and required selection count.
+- **🧠 Strategic Gameplay**: It's not just about math; it's about finding the _exact_ set of numbers (e.g., "Select 4 numbers that sum to 31").
+- **🎨 Modern UI/UX**:
+  - Smooth animations using `react-native-reanimated`.
+  - Interactive feedback (shakes on error, glows on success).
+  - Clean, professional HUD with progress tracking.
+- **📱 Cross-Platform**: Runs seamlessly on Web, iOS, and Android thanks to Expo.
+- **⚡ Instant Feedback**: Visual cues for progress, success, and errors keep the gameplay fluid.
 
 ---
 
@@ -52,13 +52,13 @@
 
 This project is built with a modern mobile development stack:
 
-| Technology | Purpose |
-| :--- | :--- |
-| **React Native** | Core framework for cross-platform mobile UI |
-| **Expo** | Development platform and build tools |
-| **TypeScript** | Type safety and robust code structure |
-| **Reanimated** | High-performance animations (60fps) |
-| **React Native Web** | Web compatibility layer |
+| Technology           | Purpose                                     |
+| :------------------- | :------------------------------------------ |
+| **React Native**     | Core framework for cross-platform mobile UI |
+| **Expo**             | Development platform and build tools        |
+| **TypeScript**       | Type safety and robust code structure       |
+| **Reanimated**       | High-performance animations (60fps)         |
+| **React Native Web** | Web compatibility layer                     |
 
 ---
 
@@ -68,33 +68,36 @@ Follow these steps to run the project locally on your machine.
 
 ### Prerequisites
 
--   **Node.js** (v14 or newer)
--   **npm** or **yarn**
--   **Expo Go** app (for testing on physical devices)
+- **Node.js** (v14 or newer)
+- **npm** or **yarn**
+- **Expo Go** app (for testing on physical devices)
 
 ### Installation
 
 1.  **Clone the repository**
+
     ```bash
     git clone https://github.com/ketanayatti/NumberPuzzleGame.git
     cd NumberPuzzleGame
     ```
 
 2.  **Install dependencies**
+
     ```bash
     npm install
     ```
 
 3.  **Start the development server**
+
     ```bash
     npm start
     ```
 
 4.  **Run on your device**
-    -   Press `w` to run in the web browser.
-    -   Press `a` to run on Android Emulator.
-    -   Press `i` to run on iOS Simulator.
-    -   Scan the QR code with the **Expo Go** app to run on your physical phone.
+    - Press `w` to run in the web browser.
+    - Press `a` to run on Android Emulator.
+    - Press `i` to run on iOS Simulator.
+    - Scan the QR code with the **Expo Go** app to run on your physical phone.
 
 ---
 
@@ -104,9 +107,9 @@ Follow these steps to run the project locally on your machine.
 2.  **Select Numbers**: Tap cells in the grid to select them.
 3.  **Watch the Math**: The "Current Sum" updates as you tap.
 4.  **Validate**:
-    -   If you select the correct amount of numbers and they equal the target, the game validates automatically (or press Validate).
-    -   **Correct?** You get a success animation and move to the next puzzle instantly.
-    -   **Wrong?** The grid shakes, and you can try again.
+    - If you select the correct amount of numbers and they equal the target, the game validates automatically (or press Validate).
+    - **Correct?** You get a success animation and move to the next puzzle instantly.
+    - **Wrong?** The grid shakes, and you can try again.
 
 ---
 

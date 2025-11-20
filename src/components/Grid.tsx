@@ -27,11 +27,17 @@ export const Grid: React.FC<GridProps> = ({
   testID,
 }) => {
   const screenWidth = Dimensions.get('window').width;
-  const padding = 16;
-  const availableWidth = screenWidth - padding * 2;
-  const gridGap = 10;
+  // Limit width for web/tablet to prevent giant cells
+  const maxContentWidth = 360; 
+  const effectiveWidth = Math.min(screenWidth, maxContentWidth);
+
+  const padding = 12;
+  const availableWidth = effectiveWidth - padding * 2;
+  // Cell has margin 4 on all sides, so 8px horizontal space per cell
+  const cellMarginHorizontal = 8; 
+  
   const cellSize = Math.floor(
-    (availableWidth - (gridState.gridCols - 1) * gridGap) / gridState.gridCols
+    (availableWidth / gridState.gridCols) - cellMarginHorizontal
   );
 
   const styles = StyleSheet.create({
@@ -40,6 +46,7 @@ export const Grid: React.FC<GridProps> = ({
       alignItems: 'center',
       marginVertical: 4,
       marginHorizontal: 16,
+      width: '100%',
     },
     grid: {
       flexWrap: 'wrap',
