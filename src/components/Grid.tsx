@@ -29,7 +29,7 @@ export const Grid: React.FC<GridProps> = ({
   const screenWidth = Dimensions.get('window').width;
   const padding = 16;
   const availableWidth = screenWidth - padding * 2;
-  const gridGap = 8;
+  const gridGap = 10;
   const cellSize = Math.floor(
     (availableWidth - (gridState.gridCols - 1) * gridGap) / gridState.gridCols
   );
@@ -39,7 +39,7 @@ export const Grid: React.FC<GridProps> = ({
       justifyContent: 'center',
       alignItems: 'center',
       marginVertical: 4,
-      marginHorizontal: 12,
+      marginHorizontal: 16,
     },
     grid: {
       flexWrap: 'wrap',

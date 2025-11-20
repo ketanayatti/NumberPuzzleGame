@@ -125,9 +125,9 @@ export const TargetDisplay: React.FC<TargetDisplayProps> = ({
       alignSelf: 'center',
       backgroundColor: '#FFFFFF',
       borderRadius: 24,
-      paddingVertical: 24,
+      paddingVertical: 16,
       paddingHorizontal: 20,
-      marginVertical: 12,
+      marginVertical: 8,
       shadowColor: '#000',
       shadowOffset: { width: 0, height: 10 },
       shadowOpacity: 0.08,
@@ -139,7 +139,7 @@ export const TargetDisplay: React.FC<TargetDisplayProps> = ({
     headerRow: {
       flexDirection: 'row',
       alignItems: 'baseline',
-      marginBottom: 16,
+      marginBottom: 12,
     },
     targetLabel: {
       fontSize: 12,
@@ -159,7 +159,7 @@ export const TargetDisplay: React.FC<TargetDisplayProps> = ({
       width: '100%',
       backgroundColor: '#F5F7FA',
       borderRadius: 4,
-      marginBottom: 20,
+      marginBottom: 16,
       overflow: 'hidden',
     },
     statsRow: {
